@@ -2,9 +2,7 @@ package application;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -35,6 +33,7 @@ public class Program {
 
 			int rowsAffected = st.executeUpdate();
 			
+			System.out.println("Pronto! inseriu " + rowsAffected + " linha(s) ");
 		}
 		catch (SQLException e) {
 			e.printStackTrace();
