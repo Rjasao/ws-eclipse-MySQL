@@ -1,0 +1,11 @@
+package db;
+
+public class DbException extends RuntimeException{
+
+	private static final long serialVersionUID = 1L;
+	
+	user=developer
+			password=1234567
+			dburl=jdbc:mysql://localhost:3306/coursejdbc
+			useSSL=false
+}
