@@ -18,17 +18,17 @@ public class Program {
 			
 			conn.setAutoCommit(false); // transacao com segurança
 			
-			st = conn.createStatement();
+				st = conn.createStatement();
+				
+				int rows1 = st.executeUpdate("UPDATE seller SET BaseSalary = 2090 WHERE DepartmentId = 1");
 			
-			int rows1 = st.executeUpdate("UPDATE seller SET BaseSalary = 2090 WHERE DepartmentId = 1");
-		
-			//erro provocada 
-			//int x =1;
-			//if(x < 2) {
-			//	throw new SQLException("erro falso");
-			//	}
-						
-			int rows2 = st.executeUpdate("UPDATE seller SET BaseSalary = 3090 WHERE DepartmentId = 2");
+				//erro provocada 
+				//int x =1;
+				//if(x < 2) {
+				//	throw new SQLException("erro falso");
+				//	}
+							
+				int rows2 = st.executeUpdate("UPDATE seller SET BaseSalary = 3090 WHERE DepartmentId = 2");
 			
 			conn.commit(); // fim da transacao com seguranca
 			
